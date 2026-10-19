@@ -1,0 +1,6 @@
+{
+  "name": "For Samavia - Will You Marry Me?",
+  "description": "A deeply heartfelt and romantic marriage proposal for Samavia with an interactive love letter, playful proposal buttons, and celebration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

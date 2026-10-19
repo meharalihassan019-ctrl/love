@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #150308;
+    color: #f7e7ce;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Gold Gradient Shimmer */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #ffe29a 0%, #ffc857 45%, #e6a728 75%, #fff1c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  text-shadow: 0 0 25px rgba(230, 167, 40, 0.45), 0 0 50px rgba(212, 175, 55, 0.25);
+}
+
+.box-gold-glow {
+  box-shadow: 0 0 35px rgba(223, 190, 101, 0.2), 0 0 70px rgba(147, 27, 59, 0.35);
+}
+
+.box-gold-border {
+  border: 1px solid rgba(223, 190, 101, 0.35);
+}
+
+/* Velvet Maroon Gradients */
+.maroon-card {
+  background: radial-gradient(120% 120% at 50% 0%, #2f0814 0%, #1a040b 100%);
+  border: 1px solid rgba(230, 190, 115, 0.25);
+}
+
+/* Subtle Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,230,160,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite linear;
+}
+
+/* Heart Float */
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) scale(0.8) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.2) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  animation: floatHeart 12s infinite linear;
+}
+
+/* Pulse Glow */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(234, 179, 8, 0.3), 0 0 30px rgba(190, 24, 93, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.6), 0 0 60px rgba(190, 24, 93, 0.5);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
